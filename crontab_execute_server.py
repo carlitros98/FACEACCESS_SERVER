@@ -24,7 +24,7 @@ def getIp():
     
         time.sleep(2)
         lcd.printline(3,ip_ok)
-        os.system('python3 /home/pi/Desktop/SERVER/capacity_access_server.py -h ' +IP+' -p '+str(port) + ' &')
+        os.system('python3 /home/pi/Desktop/SERVER/face_access_server.py -h ' +IP+' -p '+str(port) + ' &')
 
     except OSError:
         i = i + 1

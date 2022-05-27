@@ -70,7 +70,7 @@ print("\nConfiguración: \n\nHOST: " + host + "\nPORT: " + str(port) + "\n")
 os.system('sudo systemctl restart mosquitto')
 
 time.sleep(2)
-os.system('python3 /home/pi/Desktop/SERVER/servers/bootstrap\ empleado.py -h ' +host+' -p '+str(port) + ' &')
-os.system('python3 /home/pi/Desktop/SERVER/servers/bootstrap\ dispositivo.py -h ' +host+' -p '+str(port) + ' &')
+os.system('python3 /home/pi/Desktop/SERVER/servers/faceaccess\ empleado.py -h ' +host+' -p '+str(port) + ' &')
+os.system('python3 /home/pi/Desktop/SERVER/servers/faceaccess\ dispositivo.py -h ' +host+' -p '+str(port) + ' &')
 
 
