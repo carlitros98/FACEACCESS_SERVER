@@ -88,6 +88,6 @@ En el caso de que la Raspberry Pi 4 se conecte a un LCD 20x4 mediante el BUS I2C
 *https://github.com/johnrickman/LiquidCrystal_I2C.git*
 
 
-### *5) CRONTAB
+### *5) CRONTAB*
 
 El último paso para la instalación del servidor es modifcar el crontab del SO para que a los 30 segundos de encenderse el SO, ejecutar el fichero *crontab_execute_server.py*
