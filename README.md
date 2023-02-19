@@ -37,7 +37,7 @@ Luego se instalará un sistema de cerrojo, el cual funciona mediante una señal 
 <figure>
   <img
   src="./photos/lock.png"
-    width="300" height="400"
+  width="400" height="300"
   alt="Cerrojo.">
 </figure>
 
