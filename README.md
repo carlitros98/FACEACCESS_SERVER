@@ -2,7 +2,9 @@
 
 Este proyecto corresponde con el backend del servicio para el funcionamiento del sistema de control de acceso **FaceAccess**.
 
-En ella se controlarán todas las comunicaciones entre base de datos y cliente. Para dicha comunicación se empleará el protocolo **MQTT**, el cual permite comunicar de forma rápida y eficiente dispositivos de IoT, para llevar a cabo esta comunicación, se emplearán diferentes tópicos gestionados por un broker llamado **Mosquitto**. La siguiente imagen representa el diagrama de componentes de la totalidad del sistema.
+En ella se controlarán todas las comunicaciones entre base de datos y cliente. Para dicha comunicación se empleará el protocolo **MQTT**, el cual permite comunicar de forma rápida y eficiente dispositivos de IoT, para llevar a cabo esta comunicación, se emplearán diferentes tópicos gestionados por un broker llamado **Mosquitto**. 
+
+La siguiente imagen representa el diagrama de componentes de la totalidad del sistema.
 
 <figure>
   <img
