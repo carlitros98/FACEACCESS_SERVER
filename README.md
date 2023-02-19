@@ -67,11 +67,12 @@ El siguiente paso es crear su base de datos. Para ello crea las siguientes tabla
 
 ----------------------------------------------------
 
-CREATE TABLE certificados(
+   ```sql
+   CREATE TABLE certificados(
     id_certificado VARCHAR(20) PRIMARY KEY,
     uso INTEGER NOT NULL);
 
-CREATE TABLE cliente(
+   CREATE TABLE cliente(
     id SERIAL PRIMARY KEY,
     certificate_id VARCHAR(40) NOT NULL UNIQUE,
     nombre VARCHAR(20) NOT NULL,
@@ -80,8 +81,8 @@ CREATE TABLE cliente(
     puntos TEXT NOT NULL,
     presente INT2 NOT NULL,
     photo TEXT NOT NULL);
-    
-CREATE TABLE empleado(
+
+   CREATE TABLE empleado(
     nickname VARCHAR(10) PRIMARY KEY,
     pwd VARCHAR(20) NOT NULL,
     nombre VARCHAR(20) NOT NULL,
@@ -89,20 +90,21 @@ CREATE TABLE empleado(
     id_cert VARCHAR(20) NOT NULL UNIQUE,
     id_onesignal VARCHAR(50) NOT NULL UNIQUE);
 
-CREATE TABLE establecimiento(
-    id_establecimiento SERIAL PRIMARY KEY,
-    nombre VARCHAR(20) NOT NULL,
-    propietario VARCHAR(20) NOT NULL,
-    aforo_actual INTEGER NOT NULL,
-    aforo_maximo INTEGER NOT NULL,
-    menores INTEGER NOT NULL,
-    registro INTEGER NOT NULL);
+    CREATE TABLE establecimiento(
+        id_establecimiento SERIAL PRIMARY KEY,
+        nombre VARCHAR(20) NOT NULL,
+        propietario VARCHAR(20) NOT NULL,
+        aforo_actual INTEGER NOT NULL,
+        aforo_maximo INTEGER NOT NULL,
+        menores INTEGER NOT NULL,
+        registro INTEGER NOT NULL);
 
-CREATE TABLE registro(
-    certificate_id VARCHAR(40) PRIMARY KEY,
-    nombre VARCHAR(20) NOT NULL,
-    apellidos VARCHAR(50) NOT NULL,
-    fecha VARCHAR(10) NOT NULL);
+    CREATE TABLE registro(
+        certificate_id VARCHAR(40) PRIMARY KEY,
+        nombre VARCHAR(20) NOT NULL,
+        apellidos VARCHAR(50) NOT NULL,
+        fecha VARCHAR(10) NOT NULL);
+   ```
 
 ----------------------------------------------------
 
@@ -110,7 +112,9 @@ Luego debe insertar una fila en la tabla establecimiento, indicando los datos de
 
 Ahora debe ir a la carpeta servers, y modificar ambos ficheros de Python. En las primeras líneas de código aparece la conexión con base de datos. Para ello debe introducir las credenciales de su propia base de datos:
 
-*conn = psycopg2.connect( database="nombre_de_tu_db", user='tu_usuario', password='tu_password', host='localhost', port= '5432')*
+   ```py
+   conn = psycopg2.connect( database="nombre_de_tu_db", user='tu_usuario', password='tu_password', host='localhost', port= '5432')
+   ```
 
 ### *4) Instalación de liquidcrystal_i2c*
 
