@@ -29,10 +29,8 @@ Luego se instalará un sistema de cerrojo, el cual funciona mediante una señal 
 
 Finalmente, tendremos el hardware preparado:
 
-<image
-  src="/photos/total.png"
-  alt="Sistema completo"
-  caption="Instalación final">
+
+![Sistema completo](/photos/total.png "Instalación final")
 
 
 ## *Instalación del servidor*
