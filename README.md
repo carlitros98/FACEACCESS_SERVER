@@ -1,9 +1,12 @@
-# FaceAccess Brain
+# FaceAccess Server
 
-Lógica del servidor.
+Este proyecto corresponde con el backend del servicio para el funcionamiento del sistema de control de acceso FaceAccess.
 
+En ella se controlarán todas las comunicaciones entre base de datos y cliente. Para dicha comunicación se empleará el protocolo MQTT, el cual permite comunicar de forma rápida y eficiente dispositivos de IoT. Para ello se han seguido dos arquitecturas, la primera para la comunicación entre servicio y aplicación del cliente (FaceAccess Client), y la comunicación entre servicio y aplicación del empleado (FaceAccess Employee).
 
+![Alt text](./assets/arch1.png "A")
 
+![Alt text](./assets/arch2.png "A")
 ## *Instalación del servidor*
 
 Si desea compilar este proyecto debe realizar una serie de pasos para que todo el proceso sea exitoso.
