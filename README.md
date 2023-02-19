@@ -28,6 +28,7 @@ El primero es una pantalla **LCD**, en la cual mostraremos información básica 
 <figure>
   <img
   src="./photos/lcd.png"
+  width="300" height="320"
   alt="LCD Raspberry Pi 4.">
 </figure>
 
@@ -36,6 +37,7 @@ Luego se instalará un sistema de cerrojo, el cual funciona mediante una señal 
 <figure>
   <img
   src="./photos/lock.png"
+    width="300" height="400"
   alt="Cerrojo.">
 </figure>
 
@@ -44,6 +46,7 @@ Finalmente, tendremos el hardware preparado:
 <figure>
   <img
   src="./photos/total.png"
+  width="300" height="600"
   alt="Sistema completo.">
 </figure>
 
