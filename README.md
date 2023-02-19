@@ -2,10 +2,6 @@
 
 Este proyecto corresponde con el backend del servicio para el funcionamiento del sistema de control de acceso FaceAccess.
 
-![Alt text](./photos/components.png "Comunicación entre FaceAccess Client y servidor")
-*Servicio FaceAccess*
-
-
 En ella se controlarán todas las comunicaciones entre base de datos y cliente. Para dicha comunicación se empleará el protocolo MQTT, el cual permite comunicar de forma rápida y eficiente dispositivos de IoT, para llevar a cabo esta comunicación, se emplearán diferentes tópicos gestionados por un broker llamado Mosquitto. 
 
 Para ello se han seguido dos arquitecturas, la primera para la comunicación entre servicio y aplicación del cliente (FaceAccess Client), y la comunicación entre servicio y aplicación del empleado (FaceAccess Employee).
@@ -13,37 +9,22 @@ Para ello se han seguido dos arquitecturas, la primera para la comunicación ent
 ![Alt text](./photos/arch1.png "Comunicación entre FaceAccess Client y servidor")
 *Comunicación entre FaceAccess Client y servidor*
 
-
 ![Alt text](./photos/arch2.png "Comunicación entre FaceAccess Employee y servidor")
 *Comunicación entre FaceAccess Employee y servidor*
 
-
 La lógica del servidor será instalada en una Raspberry Pi 4, en la cual incorporaremos diversos elementos.
 
-
 El primero es una pantalla LCD, en la cual mostraremos información básica del sistema tales como el aforo actual, o la dirección IP del servidor (importante para conectar nuestras aplicaciones móviles a este servidor). Para ello emplearemos I2C con el siguiente esquema:
-
 
 ![Alt text](./photos/lcd.png "LCD Raspberry Pi 4")
 *LCD Raspberry Pi 4*
 
-
 Luego se instalará un sistema de cerrojo, el cual funciona mediante una señal enviada desde FaceAccess Client en caso de conceder el acceso a un cliente. Para ello haremos uso de un relé, el cual dispone de un chip Bluetooth.
-
-
-![Alt text](./photos/relay.png "Relays")
-*Bobinas de relé*
-
-
-En ella se ha seguido este esquema para instalar el cerrojo solenoidal:
-
 
 ![Alt text](./photos/lock.png "Solenoid")
 *Esquema del cerrojo conectado al relé*
 
-
 Finalmente, tendremos el hardware preparado:
-
 
 ![Alt text](./photos/total.png "total")
 *Instalación final*
@@ -62,19 +43,21 @@ Debes hacerlo de la misma forma en el fichero *crontab_execute_server.py* (líne
 
 Debe instalar en su Sistema Operativo el broker Mosquitto.
 
-*$sudo apt-get update*
+   ```sh
+   sudo apt-get update
 
-*$sudo apt-get install mosquitto*
+   sudo apt-get install mosquitto
 
-*$sudo apt-get install mosquitto-clients*
+   sudo apt-get install mosquitto-clients
+   ```
 
 ### *3) Instalación de PostgreSQL*
 
 Debe instalar en su Sistema Operativo el SGBD PSQL.
 
-*$sudo apt-get update*
-
-*$sudo apt install postgresql*
+   ```sh
+   sudo apt-get install postgresql
+   ```
 
 El siguiente paso es crear su base de datos. Para ello crea las siguientes tablas:
 
