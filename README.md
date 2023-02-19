@@ -12,7 +12,7 @@ La siguiente imagen representa el diagrama de componentes de la totalidad del si
   alt="Diagrama de componentes.">
 </figure>
 
-Para ello se han seguido dos arquitecturas, la primera para la comunicación entre servicio y aplicación del cliente (**FaceAccess Client**), y la comunicación entre servicio y aplicación del empleado (**FaceAccess Employee**).
+Para ello se han seguido dos arquitecturas, la primera para la comunicación entre servicio y aplicación del cliente (**FaceAccess Client**), y la comunicación entre servicio y aplicación del empleado (**FaceAccess Employee**). [Link text Here](https://link-url-here.org)
 
 <figure>
   <img
