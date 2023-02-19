@@ -10,7 +10,6 @@ Para ello se han seguido dos arquitecturas, la primera para la comunicación ent
   <img
   src="./photos/arch1.png"
   alt="Comunicación entre FaceAccess Client y servidor.">
-  <figcaption>[1] Comunicación entre FaceAccess Client y servidor</figcaption>
 </figure>
 
 
@@ -18,7 +17,6 @@ Para ello se han seguido dos arquitecturas, la primera para la comunicación ent
   <img
   src="./photos/arch2.png"
   alt="Comunicación entre FaceAccess Employee y servidor.">
-  <figcaption>[2] Comunicación entre FaceAccess Employee y servidor</figcaption>
 </figure>
 
 ## *Hardware*
@@ -31,7 +29,6 @@ El primero es una pantalla **LCD**, en la cual mostraremos información básica 
   <img
   src="./photos/lcd.png"
   alt="LCD Raspberry Pi 4.">
-  <figcaption>[3] LCD Raspberry Pi 4</figcaption>
 </figure>
 
 Luego se instalará un sistema de cerrojo, el cual funciona mediante una señal enviada desde FaceAccess Client en caso de conceder el acceso a un cliente. Para ello haremos uso de una **bobina de relé**, el cual dispone de un chip Bluetooth.
@@ -40,7 +37,6 @@ Luego se instalará un sistema de cerrojo, el cual funciona mediante una señal 
   <img
   src="./photos/lock.png"
   alt="Cerrojo.">
-  <figcaption>[4] Esquema del cerrojo conectado al relé</figcaption>
 </figure>
 
 Finalmente, tendremos el hardware preparado:
@@ -49,7 +45,6 @@ Finalmente, tendremos el hardware preparado:
   <img
   src="./photos/total.png"
   alt="Sistema completo.">
-  <figcaption>[5] Instalación final</figcaption>
 </figure>
 
 ## *Instalación del servidor*
