@@ -2,6 +2,10 @@
 
 Este proyecto corresponde con el backend del servicio para el funcionamiento del sistema de control de acceso FaceAccess.
 
+![Alt text](./photos/components.png "Comunicación entre FaceAccess Client y servidor")
+*Servicio FaceAccess*
+
+
 En ella se controlarán todas las comunicaciones entre base de datos y cliente. Para dicha comunicación se empleará el protocolo MQTT, el cual permite comunicar de forma rápida y eficiente dispositivos de IoT, para llevar a cabo esta comunicación, se emplearán diferentes tópicos gestionados por un broker llamado Mosquitto. 
 
 Para ello se han seguido dos arquitecturas, la primera para la comunicación entre servicio y aplicación del cliente (FaceAccess Client), y la comunicación entre servicio y aplicación del empleado (FaceAccess Employee).
