@@ -7,27 +7,31 @@ En ella se controlarán todas las comunicaciones entre base de datos y cliente. 
 Para ello se han seguido dos arquitecturas, la primera para la comunicación entre servicio y aplicación del cliente (FaceAccess Client), y la comunicación entre servicio y aplicación del empleado (FaceAccess Employee).
 
 ![Alt text](./photos/arch1.png "Comunicación entre FaceAccess Client y servidor")
-*Comunicación entre FaceAccess Client y servidor*
+*[1] Comunicación entre FaceAccess Client y servidor*
 
 ![Alt text](./photos/arch2.png "Comunicación entre FaceAccess Employee y servidor")
-*Comunicación entre FaceAccess Employee y servidor*
+*[2] Comunicación entre FaceAccess Employee y servidor*
+
+
+## *Hardware*
 
 La lógica del servidor será instalada en una Raspberry Pi 4, en la cual incorporaremos diversos elementos.
 
 El primero es una pantalla LCD, en la cual mostraremos información básica del sistema tales como el aforo actual, o la dirección IP del servidor (importante para conectar nuestras aplicaciones móviles a este servidor). Para ello emplearemos I2C con el siguiente esquema:
 
 ![Alt text](./photos/lcd.png "LCD Raspberry Pi 4")
-*LCD Raspberry Pi 4*
+*[3] LCD Raspberry Pi 4*
 
 Luego se instalará un sistema de cerrojo, el cual funciona mediante una señal enviada desde FaceAccess Client en caso de conceder el acceso a un cliente. Para ello haremos uso de un relé, el cual dispone de un chip Bluetooth.
 
 ![Alt text](./photos/lock.png "Solenoid")
-*Esquema del cerrojo conectado al relé*
+*[4] Esquema del cerrojo conectado al relé*
 
 Finalmente, tendremos el hardware preparado:
 
 ![Alt text](./photos/total.png "total")
-*Instalación final*
+*[5] Instalación final*
+
 
 ## *Instalación del servidor*
 
