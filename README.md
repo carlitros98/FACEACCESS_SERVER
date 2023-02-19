@@ -10,8 +10,9 @@ Para ello se han seguido dos arquitecturas, la primera para la comunicación ent
   <img
   src="./photos/arch1.png"
   alt="Comunicación entre FaceAccess Client y servidor.">
-  <figcaption>[2] Comunicación entre FaceAccess Client y servidor</figcaption>
+  <figcaption>[1] Comunicación entre FaceAccess Client y servidor</figcaption>
 </figure>
+
 
 <figure>
   <img
