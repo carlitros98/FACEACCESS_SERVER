@@ -10,14 +10,8 @@ Para ello se han seguido dos arquitecturas, la primera para la comunicación ent
 *Comunicación entre FaceAccess Client y servidor*
 
 
-
-
-
 ![Alt text](./assets/arch2.png "Comunicación entre FaceAccess Employee y servidor")
 *Comunicación entre FaceAccess Employee y servidor*
-
-
-
 
 
 La lógica del servidor será instalada en una Raspberry Pi 4, en la cual incorporaremos diversos elementos.
